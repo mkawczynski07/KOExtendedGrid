@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple use - KOExtendedGrid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script  type="text/javascript" src="../libs/knockout-3.0.0.debug.js"></script>
+        <script  type="text/javascript" src="../libs/jquery-2.0.3.js"></script>
+        <script  type="text/javascript" src="../src/ko-extended-grid.js"></script>
+        <script  type="text/javascript" src="../examples/simple-use.js"></script>
+    </head>
+    <body>
+        Name : <input data-bind="value:name, valueUpdate: 'afterkeydown'"/>
+        Age : <input data-bind="value:age, valueUpdate: 'afterkeydown'"/>
+        <div data-bind="extendedGrid: grid"></div>
+    </body>
+</html>
