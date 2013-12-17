@@ -10,8 +10,17 @@
         <script  type="text/javascript" src="../examples/simple-use.js"></script>
     </head>
     <body>
+
+        <h1>Simple use(without model)</h1>
+        <div data-bind="extendedGrid: noModel"></div>
+        <br/>
+        <h1>Simple use with model</h1>
+        <div data-bind="extendedGrid: grid"></div>
+        <br/>
+        <h1>Filtering grid</h1>
         Name : <input data-bind="value:name, valueUpdate: 'afterkeydown'"/>
         Age : <input data-bind="value:age, valueUpdate: 'afterkeydown'"/>
-        <div data-bind="extendedGrid: grid"></div>
+        <div data-bind="extendedGrid: filteringGrid"></div>
+        <br/>
     </body>
 </html>
